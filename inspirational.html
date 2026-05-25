@@ -1,76 +1,116 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Inspiration - Crochet Café</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Inspiration - Crochet Café</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-<nav>
-<h1>Crochet <span>Café</span></h1>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="tutorial.html">Tutorials</a></li>
-<li><a href="inspiration.html" class="active">Inspiration</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
+ 
 
-<header class="hero">
-<h2>Crochet Inspiration</h2>
-<p>Simple and creative project ideas to inspire your next crochet design.</p>
-</header>
+  <nav class="navbar navbar-expand-md bg-brown sticky-top py-3">
 
-<main>
+    <header class="container">
 
-<section>
-<h2>Beginner Project Ideas</h2>
+      <h1 class="navbar-brand mb-0 h1 fs-3 text-white">Crochet <span class="text-tan">Café</span></h1>
 
-<article>
-<h3>Cozy Scarves</h3>
-<p>
-A great beginner project for learning basic stitches while creating something useful and stylish.
-</p>
-</article>
+      <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
 
-<article>
-<h3>Mini Plushies</h3>
-<p>
-Small crochet toys help practice shaping techniques and are fun to make.
-</p>
-</article>
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
 
-<article>
-<h3>Granny Square Blankets</h3>
-<p>
-A colourful project that teaches repetition and pattern building.
-</p>
-</article>
-</section>
+      </button>
 
-<section>
-<h2>Creative Tips</h2>
-<ul>
-<li>Experiment with pastel colours</li>
-<li>Mix textures using different yarn types</li>
-<li>Start with small projects</li>
-<li>Practice neat tension for cleaner stitches</li>
-</ul>
-</section>
+      
 
-<aside>
-🧶 ✨ 🧵
-</aside>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
 
-</main>
+        <ul class="navbar-nav gap-2">
 
-<footer>
-<p>Built with HTML & CSS · Hosted on GitHub · © 2026 Crochet Café</p>
-</footer>
+          <li class="nav-item"><a href="index.html" class="nav-link nav-link-custom">Home</a></li>
+
+          <li class="nav-item"><a href="about.html" class="nav-link nav-link-custom">About</a></li>
+
+          <li class="nav-item"><a href="tutorial.html" class="nav-link nav-link-custom">Tutorials</a></li>
+
+          <li class="nav-item"><a href="inspiration.html" class="nav-link nav-link-custom active">Inspiration</a></li>
+
+          <li class="nav-item"><a href="contact.html" class="nav-link nav-link-custom">Contact</a></li>
+
+        </ul>
+
+      </div>
+
+    </header>
+
+  </nav>
+
+  <main class="container py-5">
+    <section class="text-center mb-5">
+      <h2 class="fw-bold mb-3">Beginner Project Ideas</h2>
+      <p class="fs-5 text-muted">Put your basic stitches to immediate functional use with these excellent starter guides.</p>
+    </section>
+
+    <section class="row g-4 text-start mb-5">
+      <article class="col-md-4">
+        <section class="card-custom p-4 h-100">
+          <h3 class="h5 fw-bold mb-2">🧣 Cozy Scarves</h3>
+          <p class="small">An amazing first milestone to practice row alignment uniformity and tension control.</p>
+        </section>
+      </article>
+
+      <article class="col-md-4">
+        <section class="card-custom p-4 h-100">
+          <h3 class="h5 fw-bold mb-2">🐻 Mini Plushies</h3>
+          <p class="small">Small toys that help you practice basic rounded stitch configurations effectively.</p>
+        </section>
+      </article>
+      <article class="col-md-4">
+        <section class="card-custom p-4 h-100">
+          <h3 class="h5 fw-bold mb-2">🧁 Coaster Sets</h3>
+          <p class="small">Fast, highly satisfying flat projects that make fantastic gifts for family and friends.</p>
+        </section>
+      </article>
+    </section>
+
+    <section class="row align-items-center g-5 pt-4">
+
+      <article class="col-md-6">
+        <h2 class="fw-bold mb-3">Creative Production Tips</h2>
+        <ul class="list-group list-group-flush bg-transparent">
+          <li class="list-group-item bg-transparent border-0 ps-0">✦ Experiment with solid pastel colors first.</li>
+          <li class="list-group-item bg-transparent border-0 ps-0">✦ Mix layouts using medium-weight yarn strands.</li>
+         <li class="list-group-item bg-transparent border-0 ps-0">✦ Keep tension consistently light to make loops easy to find.</li>
+        </ul>
+      </article>
+
+      <aside class="col-md-6">
+
+        <div class="bg-warm-panel rounded-4 p-2 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1629540702582-78d10b7bdfd9?auto=format&fit=crop&w=600&q=80" alt="Beautiful pastel colored crochet layout close up" class="img-fluid rounded-3 w-100">
+        </div>
+      </aside>
+    </section>
+  </main>
+  <footer class="text-center py-4 mt-5">
+    <address class="container m-0 not-italic">
+   <p class="mb-0">Hosted on GitHub · © 2026 Crochet Café</p>
+  </address>
+ </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
