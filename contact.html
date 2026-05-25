@@ -1,27 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Contact</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Crochet Café</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-<h1>Contact</h1>
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="tutorials.html">Tutorials</a>
-<a href="inspiration.html">Inspiration</a>
-<a href="contact.html">Contact</a>
+<h1>Crochet <span>Café</span></h1>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="tutorial.html">Tutorials</a></li>
+<li><a href="inspiration.html">Inspiration</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
+</ul>
 </nav>
-</header>
 
-<section class="card">
+<section>
 <h2>Contact Us</h2>
-<p>Email: crochetcafe@email.com</p>
-<p>Phone: 123-456-7890</p>
+
+<form onsubmit="handleFormSubmit(event)">
+<input type="text" placeholder="Your name" required>
+<input type="email" placeholder="you@example.com" required>
+
+<select required>
+<option>Choose a topic...</option>
+<option>Question about tutorial</option>
+<option>Share project</option>
+<option>Feedback</option>
+</select>
+
+<textarea rows="5" placeholder="Write your message here..." required></textarea>
+
+<button type="submit">Send Message ✦</button>
+<p id="form-msg" style="display:none;"></p>
+</form>
 </section>
+
+<footer>
+<p>Built with HTML & CSS · Hosted on GitHub · © 2026 Crochet Café</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
