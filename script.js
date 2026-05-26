@@ -1,14 +1,18 @@
-function handleFormSubmit(event){
-event.preventDefault();
-
-let message=document.getElementById("form-msg");
-
-message.textContent="✦ Thank you! Your message has been sent successfully.";
-message.style.display="block";
-
-event.target.reset();
-
-setTimeout(function(){
-message.style.display="none";
-},4000);
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".card");
+    cards.forEach(card => {
+        card.addEventListener("mouseover", function () {
+            card.style.transform = "scale(1.03)";
+        });
+        card.addEventListener("mouseout", function () {
+            card.style.transform = "scale(1)";
+        });
+    });
+    const form = document.querySelector("form");
+    if (form) {
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Message sent successfully!");
+        });
+    }
+});
