@@ -1,54 +1,63 @@
+html {
+    height: 100%;
+}
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: 'Lato', sans-serif;
     background-color: #f8e8ee;
     color: #000;
     margin: 0;
-    padding: 0;
+}
+main {
+    flex: 1;
 }
 h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
+     font-family: 'Playfair Display', serif;
+    color: #4b2e39;
 }
 .navbar {
     background-color: #d8bfd8;
-    padding: 15px;
+    padding: 15px 0;
 }
 .navbar-brand {
-    color: #4b2e39;
     font-size: 28px;
     font-weight: bold;
+    color: #4b2e39;
 }
 .nav-link {
     color: #000;
+    font-weight: 500;
     margin-left: 15px;
 }
-.nav-link:hover,
-.nav-link.active {
+.nav-link:hover, .nav-link.active {
     color: #8b5a7a;
-    font-weight: bold;
 }
 .hero {
     background-color: #f4d6e3;
-    padding: 80px 20px;
     text-align: center;
+    padding: 80px 20px;
 }
-.hero h1,
-.hero h2 {
-    color: #4b2e39;
+.hero h1, .hero h2 {
+    margin-bottom: 15px;
 }
-
 .hero p {
     font-size: 18px;
 }
-
+section {
+    margin-bottom: 30px;
+}
 .card {
+    background-color: #fff5f8;
     border: none;
     border-radius: 12px;
-    background-color: #fff5f8;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
 }
 .card:hover {
     transform: translateY(-5px);
-    transition: 0.3s;
 }
 .btn-primary {
     background-color: #b57edc;
@@ -65,28 +74,6 @@ footer {
     background-color: #d8bfd8;
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
-}
-
-section {
-
-html, body {
-    height: 100%;
-}
-main {
-    flex: 1;
-}
-   body {
-    font-family: 'Lato', sans-serif;
-    background-color: #f8e8ee;
-    color: #000;
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-} 
-   
-    margin-bottom: 30px; 
+    margin-top: auto;
+    width: 100%;
 }
